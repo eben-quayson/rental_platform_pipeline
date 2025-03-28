@@ -1,0 +1,25 @@
+{
+    "Comment": "State machine triggered by EventBridge at 9 AM daily",
+    "StartAt": "Glue StartJobRun",
+    "States": {
+      "Glue StartJobRun": {
+        "Type": "Task",
+        "Resource": "arn:aws:states:::glue:startJobRun",
+        "Parameters": {
+          "JobName": "load_data"
+        },
+        "Next": "Glue StartJobRun (1)"
+      },
+      "Glue StartJobRun (1)": {
+        "Type": "Task",
+        "Resource": "arn:aws:states:::glue:startJobRun",
+        "Parameters": {
+          "JobName": "Transform_and_load"
+        },
+        "Next": "Success"
+      },
+      "Success": {
+        "Type": "Succeed"
+      }
+    }
+  }
