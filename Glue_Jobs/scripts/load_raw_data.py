@@ -54,7 +54,7 @@ raw_user_viewing_df = load_table_from_catalog("user_viewing")
 
 # Define Redshift connection options
 redshift_options = {
-    "url": f"jdbc:redshift://redshift-cluster-1.ch5oimb3dzp5.eu-west-1.redshift.amazonaws.com:5439/{args['redshift_db']}",
+    "url": jdbc_url,
     "user": awsuser,
     "password": aws_password,
     "redshiftTmpDir": f"{args['TempDir']}",

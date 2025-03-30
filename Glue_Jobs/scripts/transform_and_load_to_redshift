@@ -17,7 +17,7 @@ logger.setLevel(logging.INFO)
 
 # Initialize Glue context
 args = getResolvedOptions(
-    sys.argv, ["JOB_NAME", "redshift_connection", "redshift_db", "redshift_schema", "TempDir", "db_user", "db_password", "s3_bucket", "mysql_host", "mysql_db"]
+    sys.argv, ["JOB_NAME", "redshift_connection", "redshift_db", "redshift_schema", "TempDir", "db_user", "db_password", "s3_bucket", "mysql_host", "mysql_db", "jdbc_url", "IAM_role"]
 )
 sc = SparkContext()
 glueContext = GlueContext(sc)
@@ -107,11 +107,11 @@ logger.info("Curated dataframes prepared.")
 
 # Write data to Redshift
 redshift_options = {
-    "url": f"jdbc:redshift://redshift-cluster-1.ch5oimb3dzp5.eu-west-1.redshift.amazonaws.com:5439/{args['redshift_db']}",
+    "url": args["jdbc_urld"],
     "user": args["db_user"],
     "password": args["db_password"],
     "redshiftTmpDir": args["TempDir"],
-    "aws_iam_role": "arn:aws:iam::537124942586:role/aws_glue_pipeline_role"
+    "aws_iam_role": args["IAM_role"]
 }
 
 try:
