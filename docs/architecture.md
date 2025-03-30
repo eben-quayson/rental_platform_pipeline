@@ -14,7 +14,8 @@ The **Airbnb Data Pipeline** is a fully automated **ETL (Extract, Transform, Loa
 ## 🏗️ **System Architecture**
 
 ### **1️⃣ Architecture Diagram**
-### Image: ![Airbnb Data Pipeline Architecture](docs/architecture.png)
+### Image:
+![Airbnb Data Pipeline Architecture](architecture.png)
 The diagram below illustrates how data flows through the pipeline:
 
 ```
