@@ -1,8 +1,3 @@
-Here's the **updated security documentation** in **README format** with the **Monitoring & Threat Detection** section removed.  
-
----
-
-```markdown
 # 🔒 Airbnb Data Pipeline - Security Documentation
 
 ## 📌 Overview

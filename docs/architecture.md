@@ -1,8 +1,3 @@
-Sure! Below is the **Architecture Documentation** in **README format**, detailing the pipeline components, data flow, and execution process.  
-
----
-
-```markdown
 # 📐 Airbnb Data Pipeline - Architecture Documentation
 
 ## 📌 Overview
