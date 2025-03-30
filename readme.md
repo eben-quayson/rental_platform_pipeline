@@ -232,5 +232,3 @@ This project is licensed under the **MIT License**.
 Author: Ebenezer Quayson
 
 ```
-
-This **README.md** covers all aspects of the project, from architecture to execution and future improvements. Let me know if you need any modifications! 🚀
