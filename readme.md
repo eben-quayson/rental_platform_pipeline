@@ -218,6 +218,9 @@ Replace with the relevant table to fetch other metrics.
 - Optimize Redshift queries with **materialized views**.
 - Add machine learning models to predict **occupancy rates**.
 
+
+## Architecture docs: [Architecture](./docs/architecture.md)
+
 ---
 
 ## 📖 References
