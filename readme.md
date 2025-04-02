@@ -229,5 +229,3 @@ Replace with the relevant table to fetch other metrics.
 
 ## 📜 License
 - You can find the full license details in the [LICENSE](./licence.md) file.
-
-```
